@@ -4011,7 +4011,7 @@ public $numeros=[
 
   public function testArea() {
     $cinco = new decimales(5);
-    $this->assertEquals($cinco->aRomano(),$numeros[$cinco->n])
+    $this->assertEquals($cinco->aRomano(),$numeros[$cinco->n]);
 
   }
 
