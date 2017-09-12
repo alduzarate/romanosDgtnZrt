@@ -5,7 +5,7 @@ namespace Ejemplo;
 
 use PHPUnit\Framework\TestCase;
 
-class romanosTest extends decimales {
+class romanosTest extends decimales extends TestCase{
 
 public $numeros=[
 1  => 'I',
