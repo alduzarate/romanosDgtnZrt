@@ -1,11 +1,13 @@
 <?php
 class decimales {
 	public $n;
+	protected $aux;
 	function __construct($numero)
 	{
 		$this->n=$numero;
 	}
 public function aRomano(){
+	$this->aux = $this->n;
        if ($this->n >= 1000){
 		    $this->n-=1000;
             return "M" . $this->aRomano();
@@ -44,6 +46,7 @@ public function aRomano(){
     }
         elseif ($this->n == 9){
 			$this->n-=9;
+		$this->n = $this->aux;
             return "IX";
     }
         elseif ($this->n >= 5){
@@ -52,12 +55,14 @@ public function aRomano(){
     }
         elseif ($this->n == 4){
 			$this->n-=4;
+		$this->n = $this->aux;
             return "IV";
     }
         elseif ($this->n <4 && $this->n != 0){
 			$this->n-=1;
             return "I" . $this->aRomano ();
     }
+	$this->n = $this->aux;
         else return;
 }
 }
