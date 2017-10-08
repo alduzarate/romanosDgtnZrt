@@ -66,7 +66,7 @@ public function aRomano(){
             return "I" . $this->aRomano ();
     }
 	$this->n = $this->aux;
-        else return;
+        return;
 }
 }
 ?>
