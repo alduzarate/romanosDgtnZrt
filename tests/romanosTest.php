@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Ejemplo;
+namespace romanos;
 
 use PHPUnit\Framework\TestCase;
 
