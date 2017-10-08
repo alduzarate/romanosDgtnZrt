@@ -4009,10 +4009,12 @@ public $numeros=[
 3999  => 'MMMCMXCIX'
 ];
 
-  public function testArea() {
-    $cinco = new decimales(5);
-    $this->assertEquals($cinco->aRomano(),$numeros[$cinco->n]);
-
+  public function testNro() {
+    
+    for ( $i=1 ; $i<=3999 ; $i++){
+    $c = new decimales($i);
+    $this->assertEquals($c->aRomano(),$numeros[$i]);
+    }
   }
 
 }
