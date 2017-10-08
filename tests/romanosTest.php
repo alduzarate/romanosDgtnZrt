@@ -4013,7 +4013,7 @@ public $numeros=[
     
     for ( $i=1 ; $i<=3999 ; $i++){
     $c = new decimales($i);
-    $this->assertEquals($c->aRomano(),$numeros[$i]);
+    $this->assertEquals($c->aRomano(),$this->numeros[$i]);
     }
   }
 
