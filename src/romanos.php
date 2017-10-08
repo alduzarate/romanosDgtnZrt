@@ -1,4 +1,7 @@
 <?php
+namespace romanos;
+use PHPUnit\Framework\TestCase;
+
 class decimales {
 	public $n;
 	protected $aux;
@@ -66,5 +69,4 @@ public function aRomano(){
         else return;
 }
 }
-$cinco= new decimales(5);
-print $cinco->aRomano();
+
